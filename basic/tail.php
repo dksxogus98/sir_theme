@@ -7,14 +7,14 @@ if (G5_IS_MOBILE) {
 }
 ?>
 
-    </div>
+    </div> <!-- cotainer end -->
     <div id="aside">
         <?php echo outlogin('theme/basic'); // 외부 로그인, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
         <?php echo poll('theme/basic'); // 설문조사, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
     </div>
-</div>
+</div> <!-- container_wr end -->
 
-</div>
+</div> <!-- wrapper end -->
 <!-- } 콘텐츠 끝 -->
 
 <hr>
@@ -30,16 +30,16 @@ if (G5_IS_MOBILE) {
             <a href="<?php echo get_device_change_url(); ?>">모바일버전</a>
         </div>
         <div id="ft_company" class="ft_cnt">
-        	<h2>사이트 정보</h2>
-	        <p class="ft_info">
-	        	회사명 : 회사명 / 대표 : 대표자명<br>
-				주소  : OO도 OO시 OO구 OO동 123-45<br>
-				사업자 등록번호  : 123-45-67890<br>
-				전화 :  02-123-4567  팩스  : 02-123-4568<br>
-				통신판매업신고번호 :  제 OO구 - 123호<br>
-				개인정보관리책임자 :  정보책임자명<br>
-			</p>
-	    </div>
+            <h2>사이트 정보</h2>
+            <p class="ft_info">
+                회사명 : 회사명 / 대표 : 대표자명<br>
+                주소  : OO도 OO시 OO구 OO동 123-45<br>
+                사업자 등록번호  : 123-45-67890<br>
+                전화 :  02-123-4567  팩스  : 02-123-4568<br>
+                통신판매업신고번호 :  제 OO구 - 123호<br>
+                개인정보관리책임자 :  정보책임자명<br>
+            </p>
+        </div>
         <?php
         //공지사항
         // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
@@ -48,14 +48,14 @@ if (G5_IS_MOBILE) {
         echo latest('theme/notice', 'notice', 4, 13);
         ?>
         
-		<?php echo visit('theme/basic'); // 접속자집계, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
-	</div>      
+        <?php echo visit('theme/basic'); // 접속자집계, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
+    </div>      
         <!-- <div id="ft_catch"><img src="<?php echo G5_IMG_URL; ?>/ft_logo.png" alt="<?php echo G5_VERSION ?>"></div> -->
         <div id="ft_copy">Copyright &copy; <b>소유하신 도메인.</b> All rights reserved.</div>
     
     
     <button type="button" id="top_btn">
-    	<i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span>
     </button>
     <script>
     $(function() {
